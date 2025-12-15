@@ -44,14 +44,6 @@ class Settings(BaseSettings):
     VAPI_WEBHOOK_URL: str = ""
     VAPI_ORGANIZATION_ID: str = ""
     VAPI_BASE_URL: str = "https://api.vapi.ai"
-
-    # n8n Integration
-    # NOTE: N8N_API_KEY is the ONLY intentionally hardcoded API key in this application.
-    # This is the backend automation engine key and is NOT a client-facing service.
-    # All client API keys (OpenAI, Vapi, Twilio, ElevenLabs, etc.) are stored
-    # encrypted per-tenant in the MongoDB business_config collection.
-    N8N_API_URL: str = "http://n8n:5678/api/v1"
-    N8N_API_KEY: str = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI0NGJjYmI5OS04NWJiLTQ4YTEtYmU5OS00MzE3MGIxNzVkYmYiLCJpc3MiOiJuOG4iLCJhdWQiOiJwdWJsaWMtYXBpIiwiaWF0IjoxNzY0MjM1MjMyLCJleHAiOjE3NjY4MTE2MDB9.vTKrRFW68OsjoxyWLFD3HzC_Gxt7z_GdZbq39WM-JsM"
     
     # JWT & Security
     SECRET_KEY: str = "change-this-secret-key-in-production"
