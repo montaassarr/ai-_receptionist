@@ -42,4 +42,4 @@ flake8==7.0.0
 httpx==0.26.0
 
 # Production Server
-gunicorn==21.2.0
+gunicorn==22.0.0
